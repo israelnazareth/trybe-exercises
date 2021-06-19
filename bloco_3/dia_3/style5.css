@@ -1,0 +1,29 @@
+ol li{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+.header {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+ul li:nth-of-type(-n+3) {
+    color: blue;
+}
