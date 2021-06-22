@@ -30,25 +30,71 @@ li a {
 
 article {
     display: inline-block;
-    background-color: rgb(0, 0, 190);
-    color: whitesmoke;
+    width: 74%;
+    text-align: justify;
     padding: 2%;
     border-radius: 6px;
     margin-top: 10px;
     margin-left: 10px;
-    width: 74%;
+    background-color: rgb(0, 0, 190);
+    color: whitesmoke;
 }
 
 aside {
     display: inline-block;
-    background-color: rgb(0, 0, 190);
-    color: whitesmoke;
+    position: absolute;
+    width: 15%;
+    text-align: justify;
     padding: 2%;
     border-radius: 6px;
-    width: 15%;
-    position: absolute;
     margin-top: 10px;
     margin-left: 10px;
+    background-color: rgb(0, 0, 190);
+    color: whitesmoke;
+}
+
+table {
+    display: inline-block;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+}
+
+.stoma1 {
+    position: relative;
+    display: inline-block;
+    width: 330px;
+    border-radius: 10px;
+    transform: scaleX(-1);
+}
+
+.stoma2 {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.stoma3 {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.sec1 {
+    display: inline-block;
+}
+
+.sec2 {
+    display: inline-block;
+    position: relative;    
 }
 
 footer {
