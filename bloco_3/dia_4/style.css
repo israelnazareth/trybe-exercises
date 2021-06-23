@@ -57,7 +57,7 @@ table {
     display: inline-block;
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 30%;
+    width: auto;
 }
 
 td, th {
@@ -70,31 +70,56 @@ th {
     text-align: center;
 }
 
-.stoma1 {
+.stomaTable {
     position: relative;
     display: inline-block;
     width: 330px;
+    margin-left: 10px;
     border-radius: 10px;
     transform: scaleX(-1);
+    box-shadow: -4px 4px 10px black;
+}
+
+.facts {
+    align-items: center;
+    width: 730px;
+    margin: auto;
+}
+
+.stoma1 {
+    width: 330px;
+    border-radius: 10px;
 }
 
 .stoma2 {
-    width: 30%;
-    border-radius: 10px;
-}
-
-.stoma3 {
-    width: 30%;
+    width: 330px;
     border-radius: 10px;
 }
 
 .sec1 {
     display: inline-block;
+    width: 330px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
 }
 
 .sec2 {
     display: inline-block;
-    position: relative;    
+    position: absolute;
+    width: 330px;
+    padding: 10px;
+    margin: auto;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+
+.sec1 p, .sec2 p {
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
 }
 
 footer {
