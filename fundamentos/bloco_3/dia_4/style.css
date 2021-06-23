@@ -1,0 +1,172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    padding: 30px 0px;
+    background-color: rgb(0, 0, 190);
+    color: seashell;
+    font-size: 40px;
+    box-shadow: 4px 4px 10px black;
+}
+
+nav {
+    background-color: rgb(0, 153, 255);
+    box-shadow: 4px 4px 10px black;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px -4px 10px 10px;
+    background-color: silver;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px black;
+}
+
+li a {
+    text-decoration: none;
+    color: blue;
+}
+
+article {
+    display: inline-block;
+    width: 74%;
+    text-align: justify;
+    padding: 2%;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(0, 0, 190);
+    color: whitesmoke;
+    box-shadow: 4px 4px 10px black;
+}
+
+aside {
+    display: inline-block;
+    position: absolute;
+    width: 15%;
+    text-align: justify;
+    padding: 2%;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(0, 0, 190);
+    color: whitesmoke;
+    box-shadow: 4px 4px 10px black;
+}
+
+table {
+    display: inline-block;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+}
+
+.stomaTable {
+    position: relative;
+    display: inline-block;
+    width: 330px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transform: scaleX(-1);
+    box-shadow: -4px 4px 10px black;
+}
+
+.secTable {
+    width: 550px;
+    margin: auto;
+}
+
+.facth2 {
+    text-align: center;
+}
+
+.facts {
+    align-items: center;
+    width: 730px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.stoma1 {
+    width: 330px;
+    border-radius: 10px;
+}
+
+.stoma2 {
+    width: 330px;
+    border-radius: 10px;
+}
+
+.sec1 {
+    display: inline-block;
+    width: 330px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+
+.sec2 {
+    display: inline-block;
+    position: absolute;
+    width: 330px;
+    padding: 10px;
+    margin: auto;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+}
+
+.sec1 p, .sec2 p {
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.videoTitle {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.video {
+    width: 560px;
+    margin: auto;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.biblio {
+    margin-top: 70px;
+}
+
+.biblio li a {
+    color: seashell;
+    text-decoration: underline;
+}
+
+footer {
+    margin: 20px 0px -20px 0px;
+    text-align: center;
+    padding: 70px;
+    background-color: rgb(0, 0, 190);
+    color: seashell;
+}
