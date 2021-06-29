@@ -1,12 +1,11 @@
 // 1. Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
 
-let palavra = "ovo";
-
-function palindromo(){
+function palindromo(palavra){
   if (palavra === palavra.split('').reverse().join('')){
-    return true;
+    return palavra + " é um palíndromo.";
   } else {
-    return false;
+    return palavra + " não é um palíndromo.";
   }
 }
-console.log(palindromo())
+
+console.log(palindromo("biscoito"));
