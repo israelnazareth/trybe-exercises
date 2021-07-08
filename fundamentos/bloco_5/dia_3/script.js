@@ -74,3 +74,15 @@ function displayHolidays() {
 };
 
 displayHolidays();
+
+// Exercício 04:
+function createButtonFridays(buttonName) {
+  const divButton = document.querySelector('.buttons-container');
+  const newButton = document.createElement('button');
+  const newButtonID = 'btn-friday';
+
+  newButton.id = newButtonID ;
+  newButton.innerHTML = buttonName;
+  divButton.appendChild(newButton);
+}
+createButtonFridays('Sexta-feira');
