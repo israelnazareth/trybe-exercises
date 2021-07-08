@@ -105,3 +105,23 @@ function displayFridays(friday) {
   })
 }
 displayFridays('Sextou!!!')
+
+// Exercício 06:
+function daysMouseOver() {
+  let days = document.querySelector('#days')
+
+  days.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '30px';
+  })  
+};
+
+function daysMouseOut() {
+  let days = document.querySelector('#days')
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+  })  
+};
+
+daysMouseOver();
+daysMouseOut();
