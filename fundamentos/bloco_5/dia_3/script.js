@@ -15,8 +15,9 @@ createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
 
+// Exercício 01
 // Adicionando os dias do mês no calendário;
-function daysOfTheMonth() {
+function createDaysOfTheMonth() {
   const dezDays = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   const daysList = document.querySelector('#days');
 
@@ -39,4 +40,37 @@ function daysOfTheMonth() {
   }
 };
 
-daysOfTheMonth();
+createDaysOfTheMonth();
+
+// Exercício 02:
+function createButtonHolidays(buttonName) {
+  const divButton = document.querySelector('.buttons-container');
+  const newButton = document.createElement('button');
+  const newButtonID = 'btn-holiday';
+
+  newButton.id = newButtonID ;
+  newButton.innerHTML = buttonName;
+  divButton.appendChild(newButton);
+}
+
+createButtonHolidays('Feriados');
+
+// Exercício 03:  
+function displayHolidays() {
+  let holidays = document.querySelectorAll('.holiday');
+  let button = document.querySelector('#btn-holiday');
+  let color1 = 'rgb(238,238,238)';
+  let color2 = 'red';
+
+  button.addEventListener('click', function() {
+    for (let value of holidays) {
+      if (value.style.backgroundColor === color2) {
+        value.style.backgroundColor = color1;
+      } else {
+        value.style.backgroundColor = color2;
+      }
+    }
+  })
+};
+
+displayHolidays();
