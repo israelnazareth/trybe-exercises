@@ -86,3 +86,22 @@ function createButtonFridays(buttonName) {
   divButton.appendChild(newButton);
 }
 createButtonFridays('Sexta-feira');
+
+// Exercício 05:
+function displayFridays(friday) {
+  const getFridays = document.querySelectorAll('.friday');
+  const getButton = document.querySelector('#btn-friday');
+
+  getButton.addEventListener('click',
+  
+  function() {
+    for (let value of getFridays) {
+       if (value.innerText == friday) {         
+         value.innerText = parseInt(value.nextElementSibling.innerText - 1);
+       } else {
+         value.innerText = friday;
+       }
+    }
+  })
+}
+displayFridays('Sextou!!!')
