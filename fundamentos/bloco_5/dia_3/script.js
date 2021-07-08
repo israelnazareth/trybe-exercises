@@ -112,7 +112,7 @@ function daysMouseOver() {
 
   days.addEventListener('mouseover', function(event) {
     event.target.style.fontSize = '30px';
-  })  
+  })
 };
 
 function daysMouseOut() {
@@ -120,7 +120,7 @@ function daysMouseOut() {
 
   days.addEventListener('mouseout', function(event) {
     event.target.style.fontSize = '20px';
-  })  
+  })
 };
 
 daysMouseOver();
