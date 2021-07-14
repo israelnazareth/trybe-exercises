@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de currículo</h1>
+  </header>
+  <form action="" method="GET" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <label for="name">Nome: </label>
+      <input type="text" name="nome" id="name" maxlength="40" required>
+
+      <label for="email">E-mail: </label>
+      <input type="email" name="email" id="email" maxlength="50" required>
+
+      <label for="cpf">CPF: </label>
+      <input type="text" name="cpf" id="cpf" maxlength="11" required>
+
+      <label for="endereco">Endereço: </label>
+      <input type="text" name="endereco" id="endereco" maxlength="200" required>
+
+      <label for="estado">Estado: </label>
+
+      <select name="estado" id="estado"></select><br>
+
+      Tipo de moradia:
+
+      <label for="casa">Casa</label>
+      <input type="radio" name="moradia" id="casa">
+      <label for="ap">Apartamento</label>
+      <input type="radio" name="moradia" id="ap">
+    </fieldset><br>
+    
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
