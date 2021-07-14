@@ -1,0 +1,25 @@
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+fieldset {
+  border-radius: 5px;
+}
+
+#endereco {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
