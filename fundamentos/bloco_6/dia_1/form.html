@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+  <header>
+    <h1>Cadastro de currículo</h1>
+  </header>
+  <form action="" method="GET" enctype="multipart/form-data">
+    <!-- EX 01 - Criando um fieldset para os dados pessoais -->
+    <fieldset id="dados-pessoais">
+      <legend>Dados pessoais</legend>
+      <!-- Nome -->
+      <label for="name">Nome: </label>
+      <input type="text" name="nome" id="name" maxlength="40" placeholder="Digite seu nome completo" required><br>
+
+      <!-- E-mail -->
+      <label for="email">E-mail: </label>
+      <input type="email" name="email" id="email" placeholder="Digite seu e-mail principal" maxlength="50" required>
+
+      <!-- CPF -->
+      <label for="cpf">CPF: </label>
+      <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="Digite apenas números" required>
+
+      <!-- Endreço -->
+      <p>
+        <label for="endereco">Endereço: </label>
+        <input type="text" name="endereco" id="endereco" maxlength="200" placeholder="Digite seu endereço completo" required>
+      </p>
+
+      <!-- Estado -->
+      <label for="estado">Estado: </label>
+
+      <select name="estado" id="estado"></select>
+
+      <!-- Tipo de moradia -->
+      <div id="moradia">
+        Tipo de moradia:
+        <label for="casa">Casa</label>
+        <input type="radio" name="moradia" id="casa" required>
+        <label for="ap">Apartamento</label>
+        <input type="radio" name="moradia" id="ap" required>
+      </div>
+    </fieldset><br>
+    <!-- Fim do Exercício 01 -->
+    <!-- EX 02 - Criando outro fieldset para os dados do último emprego -->
+    <fieldset id="dados-emprego">
+      <legend>Dados do seu último emprego</legend>
+      <!-- Resumo do currículo -->
+      <p>Resumo do currículo:
+      <textarea name="resumo" id="resumo" cols="30" rows="10" maxlength="1000" required></textarea></p>
+
+      <!-- Cargo -->
+      <p>Cargo:
+      <input type="text" name="cargo" id="cargo" maxlength="40" placeholder="Último cargo que ocupou" required></p>
+
+      <!-- Descrição do cargo -->
+      <p>Descrição do cargo:
+      <textarea name="" id="" cols="30" rows="7" maxlength="500"></textarea></p>
+
+      <!-- Data de início -->
+      <p>Data de início:
+        <input type="text" name="data" id="data" placeholder="dd/mm/aaaa" required>
+    </fieldset>
+  </form>
+  <button id="submit">Enviar</button>
+  <script src="script.js"></script>
+</body>
+</html>

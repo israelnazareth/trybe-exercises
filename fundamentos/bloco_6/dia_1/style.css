@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(113, 189, 255);
+  text-align: center;
+}
+
+form {
+  text-align: left;
+  background-color: rgb(220, 231, 255);
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+fieldset {
+  border-radius: 5px;
+}
+
+#dados-pessoais {
+  margin: 0px 20px 0 20px;
+}
+
+#dados-emprego {
+  margin: 0px 20px 10px 20px;
+}
+
+#name {
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+#email {
+  width: 50%;
+}
+
+#cpf {
+  width: 32%;
+}
+
+#endereco {
+  width: 96%;
+}
+
+#moradia {
+  display: inline;
+  margin-left: 130px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+#cargo {
+  width: 300px;
+}
+
+#submit {
+  width: 100px;
+}
