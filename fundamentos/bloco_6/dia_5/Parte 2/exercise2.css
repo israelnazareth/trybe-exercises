@@ -8,17 +8,18 @@ html {
 body {
   margin: 0 15px;
   font-size: 20px;
-  background-color: white;
+  background-color:rgb(251, 237, 217);
 }
 
 header h1 {
   margin: 5px -10px 0px -10px;
   border-radius: 10px;
   padding: 10px;
-  background-color: #ffdfb6;
+  background-color: #ebbd81;
   text-align: center;
   font-size: 30px;
   text-shadow: 1px 1px 5px #6d6868;
+  box-shadow: 5px 5px 10px rgb(211, 173, 123)
 }
 
 header nav ul {
@@ -29,7 +30,7 @@ header nav ul {
 }
 
 header nav ul li {
-  background-color: #ffdfb6;
+  background-color: #ebbd81;
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
@@ -37,10 +38,18 @@ header nav ul li {
   list-style: none;
   font-size: 16px;
   text-shadow: 1px 1px 5px #6d6868;
+  box-shadow: 3px 3px 5px burlywood;
 }
 
 aside h2 {
   font-size: 25px;
+  padding: 2px 10px;
+}
+
+.aside-one, .aside-two {
+  background-color: #ebbd81;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px burlywood;
 }
 
 .main-content div {
@@ -50,12 +59,15 @@ aside h2 {
 
 .main-content img {
   width: 280px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px burlywood;
+  margin-top: 30px;
 }
 
 .main-content h1 {
   font-size: 25px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .main-content p {
@@ -63,17 +75,13 @@ aside h2 {
 }
 
 footer {
-  margin: 10px -20px -20px -20px;
+  margin: 10px -15px -10px -15px;
   padding: 10px;
   color: white;
   background-color: #856338;
 }
 
-@media screen and (min-width: 426px) {
-  body {
-    margin: 0 30px;
-  }
-
+@media screen and (min-width: 768px) {
   header h1 {
     margin: 10 -20px;
     padding: 10;
@@ -85,12 +93,12 @@ footer {
   }
 
   header nav ul li {
-    padding: 0 30px;
+    margin: 0 10px;
   }
 
   .container section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .aside-one h2, .aside-two h2 {
