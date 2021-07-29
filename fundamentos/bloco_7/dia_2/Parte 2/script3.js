@@ -1,4 +1,4 @@
-// 2. Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+// 3. Crie uma função para mostrar o tamanho de um objeto.
 
 const lesson1 = {
   materia: 'Matemática',
@@ -20,12 +20,14 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addingTurn = (object, key, value) => {
-  object[key] = value;
-}
+const addingTurn = (object, key, value) => object[key] = value;
 
 addingTurn(lesson2, 'turno', 'manhã');
 
-const listKeysOfObject = (object) => Object.keys(object);
+const listKeysOfObject = object => Object.keys(object);
 
 console.table(listKeysOfObject(lesson1));
+
+const lengthOfObject = object => Object.keys(object).length;
+
+console.log(lengthOfObject(lesson1));
