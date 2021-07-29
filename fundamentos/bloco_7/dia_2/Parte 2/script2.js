@@ -20,9 +20,7 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addingTurn = (object, key, value) => {
-  object[key] = value;
-}
+const addingTurn = (object, key, value) => object[key] = value;
 
 addingTurn(lesson2, 'turno', 'manhã');
 
