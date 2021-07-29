@@ -1,3 +1,5 @@
+// 4. Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+
 const lesson1 = {
   materia: 'Matemática',
   numeroEstudantes: 20,
@@ -17,18 +19,6 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
-
-const addingTurn = (object, key, value) => object[key] = value;
-
-addingTurn(lesson2, 'turno', 'manhã');
-
-const listKeysOfObject = object => Object.keys(object);
-
-console.table(listKeysOfObject(lesson1));
-
-const lengthOfObject = object => Object.keys(object).length;
-
-console.log(lengthOfObject(lesson1));
 
 const listValuesOfObject = object => Object.values(object);
 

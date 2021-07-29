@@ -20,14 +20,6 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addingTurn = (object, key, value) => object[key] = value;
-
-addingTurn(lesson2, 'turno', 'manhã');
-
-const listKeysOfObject = object => Object.keys(object);
-
-console.table(listKeysOfObject(lesson1));
-
 const lengthOfObject = object => Object.keys(object).length;
 
 console.log(lengthOfObject(lesson1));
