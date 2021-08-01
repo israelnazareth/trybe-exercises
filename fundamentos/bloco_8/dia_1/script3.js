@@ -4,8 +4,8 @@ const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 const contadorDeRespostas = (gabarito, estudante, checador) => {
   let contador = 0;
   for (let index = 0; index <= gabarito.length; index += 1) {
-    const funcCechador = checador(gabarito[index], estudante[index]);
-    contador += funcCechador;
+    const funcChecador = checador(gabarito[index], estudante[index]);
+    contador += funcChecador;
   }
   return `A nota final é ${contador}.`;
 }
