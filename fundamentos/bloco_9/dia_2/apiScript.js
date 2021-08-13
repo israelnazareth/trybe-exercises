@@ -27,7 +27,7 @@ const fetchPromise = () => {
   })
   promise
     .then(() => console.log('Promise resolvida'))
-    .catch(() => console.log('Promise rejeitada'));
+    .catch(() => console.log('É mais de oito mil! Essa promise deve estar quebrada!'));
 }
 
 fetchPromise();
