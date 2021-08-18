@@ -1,4 +1,4 @@
-// apiScript.js     
+// apiScript.js
 const API_URL = 'https://icanhazdadjoke.com/';
 
 const fetchJoke = () => {
@@ -23,10 +23,11 @@ const fetchPromise = () => {
     const sum = array.map((number) => number * number)
     .reduce((sum, number) => sum + number);
     console.log(sum);
-    (sum < 8000) ? resolve() : reject();
+    (sum < 8000) ? resolve(sum) : reject();
   })
   promise
-    .then(() => console.log('Promise resolvida'))
+    .then((sum) => [2, 3, 5, 10].map((number) => console.log(sum / number)))
+    .then((newArray) => newArray.reduce((number, acc) => number + acc, 0))
     .catch(() => console.log('É mais de oito mil! Essa promise deve estar quebrada!'));
 }
 
