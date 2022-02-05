@@ -12,6 +12,7 @@ app.route('/books')
 app.route('/books/:id')
   .get(BookController.getBookById)
   .post(BookController.overwriteBook)
+  .delete(BookController.deleteBookById);
 
 const { PORT } = process.env || 8080;
 app.listen(PORT, () => console.log(`Ouvindo porta ${PORT}`));

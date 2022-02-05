@@ -62,4 +62,24 @@ const overwriteBook = async (req, res) => {
   }
 }
 
-module.exports = { getAllBooks, createNewBook, getBookById, overwriteBook };
+const deleteBookById = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const book = await Book.findByPk(id);
+    await book.destroy();
+
+    res.status(200).json({ message: 'Book deleted successfully' });
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).json({ message: 'Algo deu errado' })
+  }
+}
+
+module.exports = {
+  getAllBooks,
+  createNewBook,
+  getBookById,
+  overwriteBook,
+  deleteBookById
+};
