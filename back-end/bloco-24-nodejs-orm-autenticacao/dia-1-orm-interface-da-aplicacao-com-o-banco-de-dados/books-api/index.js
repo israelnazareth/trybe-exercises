@@ -6,7 +6,8 @@ const app = express();
 app.use(express.json());
 
 app.route('/books')
-  .get(BookController.getAllBooks);
+  .get(BookController.getAllBooks)
+  .post(BookController.createNewBook)
 
 const { PORT } = process.env || 8080;
 app.listen(PORT, () => console.log(`Ouvindo porta ${PORT}`));
