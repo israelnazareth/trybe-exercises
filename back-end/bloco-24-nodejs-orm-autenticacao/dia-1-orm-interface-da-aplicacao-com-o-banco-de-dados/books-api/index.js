@@ -5,7 +5,8 @@ const BookController = require('./controllers/BookController');
 const app = express();
 app.use(express.json());
 
-app.get('/books', BookController.getAllBooks);
+app.route('/books')
+  .get(BookController.getAllBooks);
 
 const { PORT } = process.env || 8080;
 app.listen(PORT, () => console.log(`Ouvindo porta ${PORT}`));
