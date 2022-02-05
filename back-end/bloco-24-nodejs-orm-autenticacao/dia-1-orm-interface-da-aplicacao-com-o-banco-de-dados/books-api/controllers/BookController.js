@@ -41,4 +41,25 @@ const createNewBook = async (req, res) => {
   }
 }
 
-module.exports = { getAllBooks, createNewBook, getBookById };
+const overwriteBook = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { title, author, pageQuantity } = req.body;
+
+    await Book.update({
+      title,
+      author,
+      pageQuantity,
+    }, { where: { id } }
+    );
+
+    const newBook = await Book.findByPk(id);
+
+    res.status(200).json(newBook);
+  } catch (err) {
+    console.log(err.message);
+    res.status(500).json({ message: 'Algo deu errado' });
+  }
+}
+
+module.exports = { getAllBooks, createNewBook, getBookById, overwriteBook };
