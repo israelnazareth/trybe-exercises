@@ -1,11 +1,11 @@
 "use strict";
-const units = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
-function convert(value, baseOne, baseTwo) {
-    if (!units.includes(baseOne) || !units.includes(baseTwo)) {
+const unitsLength = ["km", "hm", "dam", "m", "dm", "cm", "mm"];
+function convertLength(value, baseOne, baseTwo) {
+    if (!unitsLength.includes(baseOne) || !unitsLength.includes(baseTwo)) {
         throw new Error(`Parâmetro(s) inválido(s)`);
     }
-    const baseOneIndex = units.indexOf(baseOne);
-    const baseTwoIndex = units.indexOf(baseTwo);
+    const baseOneIndex = unitsLength.indexOf(baseOne);
+    const baseTwoIndex = unitsLength.indexOf(baseTwo);
     const exponent = (baseTwoIndex - baseOneIndex);
     const result = value * Math.pow(10, exponent);
     // Resultado em linha:
@@ -17,7 +17,7 @@ function convert(value, baseOne, baseTwo) {
     console.table(data);
     return result;
 }
-convert(50, "m", "cm");
+convertLength(50, "m", "cm");
 // Tabela em metros
 function tableInMeter(value) {
     const data = [
